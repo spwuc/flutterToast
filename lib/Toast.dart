@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Toast {
+  static final Top = 'top';
+  static final Bottom = 'bottom';
+  static final Center = 'center';
   static OverlayEntry _overlayEntry; // toast靠它加到屏幕上
   static bool _showing = false; // toast是否正在showing
   static DateTime _startedTime; // 开启一个新toast的当前时间，用于对比是否已经展示了足够时间
